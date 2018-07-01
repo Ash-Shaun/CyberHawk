@@ -1,6 +1,8 @@
-# Project Title
+# CyberHawk : Anti-Theft Application for Windows Laptops
 
-One Paragraph of project description goes here
+Laptops change the ways of communication, it provides an advantage of communicating with anyone virtually through video conferencing, email, etc., and it also provides a facility to store contact numbers, email id’s, in memory which reduces the concept of File-System to store personal information. Company related information and documents can be viewed anywhere and can be shared with anyone. Because of its light weight and small size, it can be stolen very easily and the confidential-information of any organization or personal details of people stored in the phone memory can be easily exposed. My project's aim is to put forward a technique through which the thief, who steals any laptop installed with CyberHawk, gets captured and the user can make him/her stop misusing any confidential information. This application includes Socket communication, Reverse TCP where you can send video clips and photos to  owner even under a firewall, unlike Email which includes only text. It gives the information about the thief by sending the snapshots and a small video clip of the thief to an alternate account, which helps us to recognize the thief.
+
+
 
 ## Getting Started
 
@@ -8,7 +10,8 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+1. Python 3.5
+2. PyQt 5.6
 
 ```
 Give examples
@@ -66,9 +69,6 @@ Add additional notes about how to deploy this on a live system
 
 Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
 ## Authors
 
