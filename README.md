@@ -13,27 +13,44 @@ These instructions will get you a copy of the project up and running on your loc
 
 1. Python 3.5
 2. PyQt 5.6
+3. MySQL ([XAMPP](https://www.apachefriends.org/download.html) Server Preferred)
 
-The complete Prerequisite can be obtained from [requirements.txt](https://gist.github.com/PurpleBooth/b24679402957c63ec426)
+The complete Prerequisite can be obtained from [requirements.txt](https://github.com/Ash-Shaun/CyberHawk/blob/master/requirements.txt)
 
 ### Installing
 
-CyberHawk can run on Python 3.5
+CyberHawk can run on Python 3.5. 
+
+Before you proceed to start the application, you need to change the DB variables to suite your needs
+```
+#Change line <b>89</b> in /CLIENT/main.py
+#Change line <b>5</b> in /MASTER/db.py
+db = MySQLdb.connect("localhost","<username>","<password>","<DB name>")
+```
+
+OPTIONAL: phpMyAdmin SQL Dump of DB I used during development
+```
+#You can import it through phpMyAdmin if you need
+Filename: credentials.sql
+DB name: credentials
+Table name: Master , Client
+```
 
 ```
 # To open Client window
 $ cd CLIENT/
 $ python main.py
 ```
+## Screenshots
 
-And repeat
+Client
 
-```
-until finished
-```
+![Client](https://raw.githubusercontent.com/Ash-Shaun/CyberHawk/master/client.JPG)
 
-End with an example of getting some data out of the system or using it for a little demo
+Master
 
+![Master](https://raw.githubusercontent.com/Ash-Shaun/CyberHawk/master/Master.JPG)
+![Master](https://raw.githubusercontent.com/Ash-Shaun/CyberHawk/master/master2.JPG)
 ## Usage
 
 Explain how to run the automated tests for this system
