@@ -1,6 +1,7 @@
 # CyberHawk : Anti-Theft Application for Windows Laptops
+[![Build Status](https://travis-ci.org/Ash-Shaun/CyberHawk.svg?branch=master)](https://travis-ci.org/Ash-Shaun/CyberHawk)
 
-Laptops change the ways of communication, it provides an advantage of communicating with anyone virtually through video conferencing, email, etc., and it also provides a facility to store contact numbers, email id’s, in memory which reduces the concept of File-System to store personal information. Company related information and documents can be viewed anywhere and can be shared with anyone. Because of its light weight and small size, it can be stolen very easily and the confidential-information of any organization or personal details of people stored in the phone memory can be easily exposed. My project's aim is to put forward a technique through which the thief, who steals any laptop installed with CyberHawk, gets captured and the user can make him/her stop misusing any confidential information. This application includes Socket communication, Reverse TCP where you can send video clips and photos to  owner even under a firewall, unlike Email which includes only text. It gives the information about the thief by sending the snapshots and a small video clip of the thief to an alternate account, which helps us to recognize the thief.
+Laptops change the ways of communication, it provides an advantage of communicating with anyone virtually through video conferencing, email, etc., and it also provides a facility to store contact numbers, email id’s, in memory which reduces the concept of File-System to store personal information. Company related information and documents can be viewed anywhere and can be shared with anyone. Because of its <b>light weight</b> and <b>small size</b>, it can be stolen very easily and the confidential-information of any organization or personal details of people stored in the phone memory can be easily exposed. My project's aim is to put forward a technique through which the thief, who steals any laptop installed with <i>CyberHawk</i>, gets captured and the user can make him/her stop misusing any confidential information. This application includes Socket communication, Reverse TCP where you can send video clips and photos to  owner even under a firewall, unlike Email which includes only text. It gives the information about the thief by sending the snapshots and a small video clip of the thief to an alternate account, which helps us to recognize the thief.
 
 
 
@@ -13,18 +14,16 @@ These instructions will get you a copy of the project up and running on your loc
 1. Python 3.5
 2. PyQt 5.6
 
-```
-Give examples
-```
+The complete Prerequisite can be obtained from [requirements.txt](https://gist.github.com/PurpleBooth/b24679402957c63ec426)
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
+CyberHawk can run on Python 3.5
 
 ```
-Give the example
+# To open Client window
+$ cd CLIENT/
+$ python main.py
 ```
 
 And repeat
@@ -35,7 +34,7 @@ until finished
 
 End with an example of getting some data out of the system or using it for a little demo
 
-## Running the tests
+## Usage
 
 Explain how to run the automated tests for this system
 
