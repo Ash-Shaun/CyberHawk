@@ -1,0 +1,7 @@
+Flask == 0.10.1
+Pillow == 4.2.1
+PyQt5 == 5.9
+mysqlclient == 1.3.12
+opencv_python == 3.3.0.10
+requests == 2.18.4
+win10toast == 0.8
