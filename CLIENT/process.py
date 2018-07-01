@@ -1,4 +1,5 @@
-
+''' This is the module. It actually does the work when we ask for things. For eg: if we says screenshot
+this one actually takes and returns output'''
 def screen_shot():
     from PIL import ImageGrab
     image = ImageGrab.grab()

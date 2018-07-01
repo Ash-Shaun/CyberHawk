@@ -1,15 +1,16 @@
-import _thread
+import _thread  # for multithreading
 import os
 import sys
-import time
-import winsound
-import process
-import MySQLdb
-from PyQt5 import QtWidgets
+import time  # for sleep method
+import winsound  # Audio library
+import process  # This is a custom module we wrote and saved as process.py to make this file short
+import MySQLdb  # DB connectivity
+from PyQt5 import QtWidgets  # For GUI of application
 
-import cam_ip_set
 
-from client_gui import Ui_MainWindow
+import cam_ip_set  # # This is a custom module we wrote and saved as process.py to make this file short
+
+from client_gui import Ui_MainWindow  # also for GUI
 
 
 class mainclass(Ui_MainWindow):
@@ -18,11 +19,15 @@ class mainclass(Ui_MainWindow):
     def __init__(self,MainWindow):
         Ui_MainWindow.__init__(self)
         self.setupUi(MainWindow)
+
+        # Keeping the default state to unauthenticated
         self.auth_stat="Unauthenticated"
         self.l_ip=0
+
         # connecting each and every function to button click
         self.FetchIP.clicked.connect(self.tip)
         self.Exit.clicked.connect(self.closeapp)
+
         # threading to stop unresponsive window
         _thread.start_new_thread(self.connection_status,())
         _thread.start_new_thread(self.sysinf, ())
@@ -56,6 +61,7 @@ class mainclass(Ui_MainWindow):
         if self.auth_stat is 'Authenticated':
             pass
         else:
+
             # Login_processor saves username and password in user.dat file
             os.system('login_processor.py')
             while True:
@@ -90,6 +96,7 @@ class mainclass(Ui_MainWindow):
             ''' Testing if the credentials are right or wrong
             # if auth99 = 0 --> login failed (the username & password combination are NOT there in DB)
             # if auth99 = 1 --> login success (the username & password combination are there in DB) '''
+
             self.auth99 = cursor.execute("SELECT * FROM CLIENT WHERE USER = '" + user + "' AND PASS = '" + pwd + "'")
         except Exception as e:
             pass
@@ -103,6 +110,7 @@ class mainclass(Ui_MainWindow):
             cursor.execute("SELECT * FROM CLIENT WHERE USER = '" + user + "' AND PASS = '" + pwd + "'")
             data = cursor.fetchone()
             for x in data:
+
                 # getting key, salt username and access ID from DB
                 authkey = data[3]
                 authsalt = data[4]
@@ -128,6 +136,8 @@ class mainclass(Ui_MainWindow):
             _thread.start_new_thread(self.conn_est, ())
 
     def conn_est(self):
+
+        #  runs to establish a connection using client server model
         import socket
         s=socket.socket()
         host=socket.gethostbyname(socket.gethostname())
@@ -218,6 +228,7 @@ class mainclass(Ui_MainWindow):
                 pass
 
     def wcstart(self):
+        # For webcam
         os.system("webcam.py")
 
     def connection_status(self):
@@ -246,6 +257,8 @@ class mainclass(Ui_MainWindow):
         sys.exit(app.exec_())
 
 
+''' Here __name__ is a special attribute. Its used to pinpoint the execution point
+and __name__ == __main__ says if its a main function then execute it'''
 if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)
     MainWindow = QtWidgets.QMainWindow()
@@ -254,6 +267,8 @@ if __name__ == '__main__':
     sys.exit(app.exec_())
 
 
+
+# IGNORE IT
 
 
 # if a<4:
