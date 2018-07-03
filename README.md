@@ -82,6 +82,18 @@ All contributions are welcome. :)
 
 * **Aslam Muhammed** - <i> Ideator, worker, debugger,.... </i> [Ash-Shaun](https://github.com/Ash-Shaun)
 
+## Troubleshooting
+
+1. MySQLdb may have a compatibility issue with Python 3.x . Also some users reported they were not able to install MySQLdb through pip.
+'''
+#Solution:
+$ pip install pymysql
+
+#change the import statement
+
+#import MySQLdb -> import pymysql
+'''
+
 ## Contributors
 
 <i> None so far...</i>
