@@ -85,14 +85,14 @@ All contributions are welcome. :)
 ## Troubleshooting
 
 1. MySQLdb may have a compatibility issue with Python 3.x . Also some users reported they were not able to install MySQLdb through pip.
-'''
+```
 #Solution:
 $ pip install pymysql
 
 #change the import statement
 
 #import MySQLdb -> import pymysql
-'''
+```
 
 ## Contributors
 
