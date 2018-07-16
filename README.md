@@ -105,4 +105,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 * Log0 - <im.ckieric@gmail.com>
+* Arjun Gullbadhar - <https://github.com/arjunfzk>
 
