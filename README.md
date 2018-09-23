@@ -80,7 +80,7 @@ All contributions are welcome. :)
 
 ## Authors
 
-* **Aslam Muhammed** - <i> Ideator, worker, debugger,.... </i> [Ash-Shaun](https://github.com/Ash-Shaun)
+* **Aslam Muhammed** - <i> Ideator, worker, debugger,... </i> [Ash-Shaun](https://github.com/Ash-Shaun)
 
 ## Troubleshooting
 
