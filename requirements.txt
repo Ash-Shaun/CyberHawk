@@ -3,4 +3,3 @@ Pillow
 mysqlclient
 opencv_python == 3.3.0.10
 requests
-win10toast
