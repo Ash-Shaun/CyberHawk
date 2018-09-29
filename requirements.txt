@@ -1,5 +1,5 @@
 Flask
 Pillow
 pymysql
-opencv_python == 3.3.0.10
+opencv_python
 requests
