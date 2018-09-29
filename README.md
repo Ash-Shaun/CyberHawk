@@ -1,5 +1,6 @@
 # CyberHawk : Anti-Theft Application for Windows Laptops
 [![Build Status](https://travis-ci.org/Ash-Shaun/CyberHawk.svg?branch=master)](https://travis-ci.org/Ash-Shaun/CyberHawk)
+[![Requirements Status](https://requires.io/github/Ash-Shaun/CyberHawk/requirements.svg?branch=master)](https://requires.io/github/Ash-Shaun/CyberHawk/requirements/?branch=master)
 [![License Badge](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Ash-Shaun/CyberHawk/blob/master/LICENSE)
 [![Compatibility](https://img.shields.io/badge/python-3-brightgreen.svg)](https://github.com/Ash-Shaun/CyberHawk)
 
